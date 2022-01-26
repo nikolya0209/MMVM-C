@@ -13,6 +13,9 @@
 		525B236727A18D67009057C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525B236527A18D67009057C5 /* Main.storyboard */; };
 		525B236927A18D6B009057C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525B236827A18D6B009057C5 /* Assets.xcassets */; };
 		525B236C27A18D6B009057C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525B236A27A18D6B009057C5 /* LaunchScreen.storyboard */; };
+		525B237827A18E98009057C5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B237727A18E98009057C5 /* User.swift */; };
+		525B237A27A18F23009057C5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B237927A18F23009057C5 /* ViewModel.swift */; };
+		525B237D27A18F8C009057C5 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B237C27A18F8C009057C5 /* Dynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		525B236827A18D6B009057C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		525B236B27A18D6B009057C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		525B236D27A18D6B009057C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525B237727A18E98009057C5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		525B237927A18F23009057C5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		525B237C27A18F8C009057C5 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,74 @@
 		525B235E27A18D67009057C5 /* MVVM-C */ = {
 			isa = PBXGroup;
 			children = (
-				525B235F27A18D67009057C5 /* AppDelegate.swift */,
-				525B236127A18D67009057C5 /* SceneDelegate.swift */,
-				525B236327A18D67009057C5 /* ViewController.swift */,
-				525B236527A18D67009057C5 /* Main.storyboard */,
-				525B236827A18D6B009057C5 /* Assets.xcassets */,
-				525B236A27A18D6B009057C5 /* LaunchScreen.storyboard */,
-				525B236D27A18D6B009057C5 /* Info.plist */,
+				525B237E27A1A080009057C5 /* Application */,
+				525B237627A18E50009057C5 /* Models */,
+				525B237427A18DCE009057C5 /* VIews */,
+				525B237327A18D92009057C5 /* ViewModels */,
+				525B237F27A1A0A2009057C5 /* Helpers */,
 			);
 			path = "MVVM-C";
+			sourceTree = "<group>";
+		};
+		525B237327A18D92009057C5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				525B237B27A18F75009057C5 /* Bindings */,
+				525B237927A18F23009057C5 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		525B237427A18DCE009057C5 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				525B236327A18D67009057C5 /* ViewController.swift */,
+				525B237527A18DDA009057C5 /* Storyboards */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		525B237527A18DDA009057C5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				525B236527A18D67009057C5 /* Main.storyboard */,
+				525B236A27A18D6B009057C5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		525B237627A18E50009057C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				525B237727A18E98009057C5 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		525B237B27A18F75009057C5 /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				525B237C27A18F8C009057C5 /* Dynamic.swift */,
+			);
+			path = Bindings;
+			sourceTree = "<group>";
+		};
+		525B237E27A1A080009057C5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				525B235F27A18D67009057C5 /* AppDelegate.swift */,
+				525B236127A18D67009057C5 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		525B237F27A1A0A2009057C5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				525B236827A18D6B009057C5 /* Assets.xcassets */,
+				525B236D27A18D6B009057C5 /* Info.plist */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525B237A27A18F23009057C5 /* ViewModel.swift in Sources */,
+				525B237827A18E98009057C5 /* User.swift in Sources */,
 				525B236427A18D67009057C5 /* ViewController.swift in Sources */,
+				525B237D27A18F8C009057C5 /* Dynamic.swift in Sources */,
 				525B236027A18D67009057C5 /* AppDelegate.swift in Sources */,
 				525B236227A18D67009057C5 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C8V9DS8345;
-				INFOPLIST_FILE = "MVVM-C/Info.plist";
+				INFOPLIST_FILE = "MVVM-C/Helpers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C8V9DS8345;
-				INFOPLIST_FILE = "MVVM-C/Info.plist";
+				INFOPLIST_FILE = "MVVM-C/Helpers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
