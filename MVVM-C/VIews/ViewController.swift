@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     var viewModel = ViewModel()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         initialState()
@@ -34,7 +33,6 @@ class ViewController: UIViewController {
         viewModel.statusText.bind { statusText in
             DispatchQueue.main.async {
                 self.statusLabel.text = statusText
-                
             }
         }
         viewModel.statusColor.bind { statusColor in
@@ -43,6 +41,5 @@ class ViewController: UIViewController {
             }
         }
     }
-
 }
 
