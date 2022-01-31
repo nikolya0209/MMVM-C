@@ -7,15 +7,16 @@
 
 import UIKit
 
-protocol Storybardable {
+protocol Storyboardable {
     static func createObject() -> Self
 }
 
-extension Storybardable where Self: UIViewController {
+extension Storyboardable where Self: UIViewController {
     static func createObject() -> Self {
         let id  = String(describing: self)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         return storyboard.instantiateViewController(identifier: id) as! Self
+        
     }
 }

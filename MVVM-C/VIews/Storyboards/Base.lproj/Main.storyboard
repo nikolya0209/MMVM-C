@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="-26.086956521739133" y="79.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="Wkq-iQ-EZs">
             <objects>
-                <viewController id="oqv-jt-7cn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="oqv-jt-7cn" customClass="MainViewController" customModule="MVVM_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZIB-vb-FFN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,6 +141,9 @@
                                     <constraint firstAttribute="height" constant="41" id="hL1-7C-X8Y"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="aboutButtonPressed:" destination="oqv-jt-7cn" eventType="touchUpInside" id="Pxj-nh-Bth"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zwb-n4-IbH"/>
@@ -157,15 +160,18 @@
                             <constraint firstItem="kt9-be-S5T" firstAttribute="top" secondItem="zH1-Cw-mZR" secondAttribute="bottom" constant="35" id="rpc-BX-qsc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainLabel" destination="zH1-Cw-mZR" id="rPf-pD-GUw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZ3-Xl-6TY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="656.52173913043487" y="79.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="6qi-5K-p6c">
             <objects>
-                <viewController id="8PZ-4Z-j19" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="8PZ-4Z-j19" customClass="DetailViewController" customModule="MVVM_C" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wnd-re-3QO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -257,6 +263,12 @@
                             <constraint firstItem="b7j-Aj-TFJ" firstAttribute="leading" secondItem="5Uc-eR-Bnh" secondAttribute="leading" constant="20" id="sCe-O3-tZP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="Obg-Ab-8md" id="BVA-6F-Lwf"/>
+                        <outlet property="emailLabel" destination="Odl-eh-LNE" id="U5b-dd-G3x"/>
+                        <outlet property="nameLabel" destination="9Wu-Uc-hKw" id="ulf-pB-lr5"/>
+                        <outlet property="phoneLabel" destination="f5J-hW-cTI" id="CtW-Lf-T4L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B89-8G-Ott" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -17,7 +17,12 @@
 		525B237D27A18F8C009057C5 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B237C27A18F8C009057C5 /* Dynamic.swift */; };
 		525B238327A31C81009057C5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B238227A31C81009057C5 /* Coordinator.swift */; };
 		525B238527A31D14009057C5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B238427A31D14009057C5 /* AppCoordinator.swift */; };
-		525B238827A31E21009057C5 /* Storybardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B238727A31E21009057C5 /* Storybardable.swift */; };
+		525B238827A31E21009057C5 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B238727A31E21009057C5 /* Storyboardable.swift */; };
+		525B238A27A82FCB009057C5 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B238927A82FCB009057C5 /* UserData.swift */; };
+		525B238C27A832BE009057C5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B238B27A832BE009057C5 /* MainViewController.swift */; };
+		525B238E27A832E7009057C5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B238D27A832E7009057C5 /* DetailViewController.swift */; };
+		525B239027A83304009057C5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B238F27A83304009057C5 /* MainViewModel.swift */; };
+		525B239227A8330F009057C5 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B239127A8330F009057C5 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +38,12 @@
 		525B237C27A18F8C009057C5 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		525B238227A31C81009057C5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		525B238427A31D14009057C5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		525B238727A31E21009057C5 /* Storybardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storybardable.swift; sourceTree = "<group>"; };
+		525B238727A31E21009057C5 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		525B238927A82FCB009057C5 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		525B238B27A832BE009057C5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		525B238D27A832E7009057C5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		525B238F27A83304009057C5 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		525B239127A8330F009057C5 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,8 @@
 			children = (
 				525B237B27A18F75009057C5 /* Bindings */,
 				525B237927A18F23009057C5 /* LoginViewModel.swift */,
+				525B238F27A83304009057C5 /* MainViewModel.swift */,
+				525B239127A8330F009057C5 /* DetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -90,6 +102,8 @@
 			children = (
 				525B238627A31DEB009057C5 /* Protocols */,
 				525B236327A18D67009057C5 /* LoginViewController.swift */,
+				525B238B27A832BE009057C5 /* MainViewController.swift */,
+				525B238D27A832E7009057C5 /* DetailViewController.swift */,
 				525B237527A18DDA009057C5 /* Storyboards */,
 			);
 			path = VIews;
@@ -108,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				525B237727A18E98009057C5 /* User.swift */,
+				525B238927A82FCB009057C5 /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,7 +172,7 @@
 		525B238627A31DEB009057C5 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				525B238727A31E21009057C5 /* Storybardable.swift */,
+				525B238727A31E21009057C5 /* Storyboardable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -232,14 +247,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525B238E27A832E7009057C5 /* DetailViewController.swift in Sources */,
 				525B237A27A18F23009057C5 /* LoginViewModel.swift in Sources */,
 				525B237827A18E98009057C5 /* User.swift in Sources */,
 				525B238327A31C81009057C5 /* Coordinator.swift in Sources */,
+				525B238A27A82FCB009057C5 /* UserData.swift in Sources */,
 				525B236427A18D67009057C5 /* LoginViewController.swift in Sources */,
-				525B238827A31E21009057C5 /* Storybardable.swift in Sources */,
+				525B238827A31E21009057C5 /* Storyboardable.swift in Sources */,
 				525B237D27A18F8C009057C5 /* Dynamic.swift in Sources */,
 				525B236027A18D67009057C5 /* AppDelegate.swift in Sources */,
+				525B239227A8330F009057C5 /* DetailViewModel.swift in Sources */,
 				525B238527A31D14009057C5 /* AppCoordinator.swift in Sources */,
+				525B238C27A832BE009057C5 /* MainViewController.swift in Sources */,
+				525B239027A83304009057C5 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +409,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C8V9DS8345;
 				INFOPLIST_FILE = "MVVM-C/Helpers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,6 +429,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C8V9DS8345;
 				INFOPLIST_FILE = "MVVM-C/Helpers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
