@@ -17,6 +17,5 @@ extension Storyboardable where Self: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         return storyboard.instantiateViewController(identifier: id) as! Self
-        
     }
 }

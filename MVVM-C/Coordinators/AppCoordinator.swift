@@ -38,7 +38,6 @@ class AppCoordinator: Coordinator {
             vc.viewModel = viewModel
             navigationController.viewControllers.removeAll()
             navigationController.pushViewController(vc, animated: true)
-            
         }
         
         func showDetail() {
@@ -48,7 +47,5 @@ class AppCoordinator: Coordinator {
             vc.coordinator = self
             vc.viewModel = viewModel
             navigationController.pushViewController(vc, animated: true)
-            
         }
-    
 }

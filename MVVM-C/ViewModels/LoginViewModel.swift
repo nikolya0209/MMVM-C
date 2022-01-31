@@ -13,7 +13,6 @@ class LoginViewModel {
     var statusColor = Dynamic(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
     var isLoggedIn = false
     
-    
     func userButtonPressed(login: String, password: String) {
         if login != User.logins[0].login || password != User.logins[0].password {
             statusText.value = "Login is failed"
